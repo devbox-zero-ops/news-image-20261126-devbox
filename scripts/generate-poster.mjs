@@ -17,37 +17,33 @@ const outThumb = process.env.PREVIEW_300 || '';
 const heroCards = [
   {
     num: 1,
-    kicker: 'USA · WEATHER · AP / LA TIMES',
+    kicker: 'USA · NEW YORK · AP',
     conf: 'CONFIRMED',
     confCls: 'cf-confirmed',
-    hed: "Nor'easter halts Macy's 100th; Pacifica pier falls",
-    desc: 'Gusts above 50 mph move New York’s centennial parade to Saturday, trigger a New Jersey emergency, and fuel California swells snapping Pacifica Pier.',
+    hed: "Nor'easter halts Macy's 100th Thanksgiving parade",
+    desc: 'Winds above 50 mph force New York’s centennial march into its first weather postponement to Saturday and prompt a New Jersey storm emergency.',
     svg: `
       <rect width="320" height="114" fill="#1C314E"/>
       <rect y="84" width="320" height="30" fill="#0F1F36"/>
-      <rect x="14" y="38" width="20" height="48" fill="#334E73"/>
-      <rect x="38" y="20" width="26" height="66" fill="#274060"/>
-      <rect x="70" y="46" width="20" height="40" fill="#334E73"/>
-      <rect x="142" y="28" width="22" height="58" fill="#274060"/>
-      <rect x="168" y="48" width="18" height="38" fill="#334E73"/>
-      <line x1="20" y1="14" x2="128" y2="28" stroke="#93C5FD" stroke-width="1.6" stroke-dasharray="6 4"/>
-      <line x1="10" y1="30" x2="136" y2="45" stroke="#BFDBFE" stroke-width="1.3" stroke-dasharray="6 4"/>
-      <line x1="32" y1="48" x2="148" y2="62" stroke="#93C5FD" stroke-width="1.1" stroke-dasharray="5 5"/>
-      <!-- Macy's parade balloon blown sideways -->
-      <ellipse cx="102" cy="40" rx="32" ry="17" transform="rotate(-14 102 40)" fill="#FBBF24" stroke="#B45309" stroke-width="1.8"/>
-      <circle cx="127" cy="29" r="8" fill="#DC2626"/>
-      <ellipse cx="104" cy="36" rx="12" ry="5" transform="rotate(-14 104 36)" fill="#FDE68A" opacity="0.65"/>
-      <line x1="86" y1="54" x2="76" y2="86" stroke="#E2E8F0" stroke-width="1.4"/>
-      <line x1="114" y1="52" x2="118" y2="86" stroke="#E2E8F0" stroke-width="1.4"/>
-      <!-- Broken Pacifica pier + surging wave -->
-      <path d="M 186 86 Q 214 60 242 82 T 290 74 T 320 82 L 320 114 L 186 114 Z" fill="#0284C7"/>
-      <path d="M 192 92 Q 222 72 252 88 T 320 88" fill="none" stroke="#BAE6FD" stroke-width="1.6"/>
-      <rect x="196" y="60" width="60" height="6" fill="#78350F"/>
-      <rect x="262" y="65" width="44" height="6" transform="rotate(11 262 65)" fill="#78350F"/>
-      <rect x="208" y="66" width="6" height="20" fill="#92400E"/>
-      <rect x="242" y="66" width="6" height="20" fill="#92400E"/>
-      <rect x="218" y="10" width="90" height="24" rx="4" fill="#991B1B"/>
-      <text x="263" y="26" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial" font-size="11.5" font-weight="800">SAT NOV 28</text>
+      <rect x="20" y="38" width="22" height="48" fill="#334E73"/>
+      <rect x="46" y="18" width="28" height="68" fill="#274060"/>
+      <rect x="80" y="44" width="22" height="42" fill="#334E73"/>
+      <rect x="168" y="24" width="26" height="62" fill="#274060"/>
+      <rect x="200" y="36" width="22" height="50" fill="#334E73"/>
+      <rect x="228" y="48" width="20" height="38" fill="#274060"/>
+      <line x1="22" y1="14" x2="150" y2="28" stroke="#93C5FD" stroke-width="1.6" stroke-dasharray="6 4"/>
+      <line x1="12" y1="30" x2="162" y2="46" stroke="#BFDBFE" stroke-width="1.3" stroke-dasharray="6 4"/>
+      <line x1="36" y1="50" x2="178" y2="66" stroke="#93C5FD" stroke-width="1.1" stroke-dasharray="5 5"/>
+      <!-- Iconic Macy's parade balloon tilted in storm wind -->
+      <ellipse cx="122" cy="42" rx="34" ry="18" transform="rotate(-14 122 42)" fill="#FBBF24" stroke="#B45309" stroke-width="1.8"/>
+      <circle cx="148" cy="30" r="8.5" fill="#DC2626"/>
+      <ellipse cx="124" cy="38" rx="13" ry="5.5" transform="rotate(-14 124 38)" fill="#FDE68A" opacity="0.65"/>
+      <line x1="104" y1="56" x2="94" y2="86" stroke="#E2E8F0" stroke-width="1.5"/>
+      <line x1="136" y1="54" x2="140" y2="86" stroke="#E2E8F0" stroke-width="1.5"/>
+      <rect x="208" y="10" width="100" height="24" rx="4" fill="#991B1B"/>
+      <text x="258" y="26" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial" font-size="11.5" font-weight="800">100TH PARADE</text>
+      <circle cx="282" cy="64" r="16" fill="#0F1F36" stroke="#FBBF24" stroke-width="1.6"/>
+      <text x="282" y="68" text-anchor="middle" fill="#FDE047" font-family="Segoe UI, Arial" font-size="10.5" font-weight="800">50+</text>
     `
   },
   {
@@ -208,7 +204,7 @@ const midCards = [
     conf: 'CONFIRMED',
     confCls: 'cf-confirmed',
     hed: 'Bears stun Lions 39–35 with 3 seconds left',
-    desc: 'Caleb Williams hits Rome Odunze for winning touchdown to lift Chicago atop NFC North.',
+    desc: 'Williams throws late touchdown pass to lift Chicago atop NFC North.',
     svg: `
       <rect width="236" height="72" fill="#14532D"/>
       <!-- Stadium field yard lines + goalpost -->
@@ -318,29 +314,27 @@ const utcTimeline = [
 ];
 
 const leftBriefs = [
-  { n: 12, city: 'Canberra', text: 'Australia passes 5% online safety fine bill' },
-  { n: 13, city: 'Pyongyang', text: 'North Korea gives Swiss envoy 48h to exit' },
-  { n: 14, city: 'Zurich', text: 'FIFA says <0.1% files in 12 GB breach claim' },
-  { n: 15, city: 'Global', text: 'Binance restores transfers after hack pause' },
-  { n: 16, city: 'Ibiza', text: 'Diesel tanker Med Emre sinks; 1 dead, 16 saved' },
-  { n: 17, city: 'Dhaka', text: '400 garment plants shut amid wage protests' },
-  { n: 18, city: 'Belgrade', text: 'Serbia sets Dec 27 presidential election' },
-  { n: 19, city: 'Paris', text: 'UNESCO & WAN-IFRA issue AI newsroom guide' },
-  { n: 20, city: 'Cambridge', text: 'Jury convicts LNER train stabbing suspect' },
-  { n: 21, city: 'Bengaluru', text: 'Flipkart CEO Kalyan Krishnamurthy exits' }
+  { n: 12, city: 'Pacifica', text: 'King tide swells collapse historic California pier' },
+  { n: 13, city: 'Canberra', text: 'Australia passes 5% digital safety fine bill' },
+  { n: 14, city: 'Pyongyang', text: 'North Korea gives Swiss envoy 48h to exit' },
+  { n: 15, city: 'Zurich', text: 'FIFA says <0.1% files in 12 GB breach claim' },
+  { n: 16, city: 'Global', text: 'Binance restores transfers after hack pause' },
+  { n: 17, city: 'Ibiza', text: 'Tanker Med Emre sinks; 1 dead, 16 rescued' },
+  { n: 18, city: 'Dhaka', text: '400 garment plants shut over wage protests' },
+  { n: 19, city: 'Belgrade', text: 'Serbia sets Dec 27 presidential election' },
+  { n: 20, city: 'Bengaluru', text: 'Flipkart CEO Kalyan Krishnamurthy exits' }
 ];
 
 const rightBriefs = [
-  { n: 22, city: 'Beijing', text: 'Golf clubs ordered shut; Premier Li meets ADB' },
-  { n: 23, city: 'Ottawa', text: 'Canada commits C$52M for domestic AI tools' },
-  { n: 24, city: 'Buenos Aires', text: 'Brazil recalls Ambassador Bitelli over dispute' },
-  { n: 25, city: 'Batumi', text: 'UEFA Beşiktaş tie suspended over fan clashes' },
-  { n: 26, city: 'Giza', text: 'Driver arrested after 31-death tanker pileup' },
-  { n: 27, city: 'Baghdad', text: 'Iraq seals informal oil-smuggling crossings' },
+  { n: 21, city: 'Paris', text: 'UNESCO & WAN-IFRA issue AI newsroom guide' },
+  { n: 22, city: 'Cambridge', text: 'Jury convicts LNER train stabbing suspect' },
+  { n: 23, city: 'Beijing', text: 'Golf clubs shut; Premier Li meets ADB chief' },
+  { n: 24, city: 'Ottawa', text: 'Canada commits C$52M for domestic AI tools' },
+  { n: 25, city: 'Buenos Aires', text: 'Brazil recalls Ambassador Bitelli over rift' },
+  { n: 26, city: 'Batumi', text: 'UEFA Beşiktaş tie halted over fan clashes' },
+  { n: 27, city: 'Giza', text: 'Driver arrested after 31-death tanker pileup' },
   { n: 28, city: 'Khartoum', text: 'UN logs 383,000 displaced across Kordofan' },
-  { n: 29, city: 'Brussels', text: 'Eldridge seals agreement for Lukoil assets' },
-  { n: 30, city: 'London', text: 'Brent crude hits $95.58; gold slips 0.8%' },
-  { n: 31, city: 'Geneva', text: 'Trump & NATO’s Rutte warn Moscow on talks' }
+  { n: 29, city: 'Brussels', text: 'Eldridge seals deal for Lukoil global assets' }
 ];
 
 const html = `<!doctype html>
@@ -386,7 +380,7 @@ const html = `<!doctype html>
   .utc-strip {
     display: flex; align-items: center; justify-content: space-between;
     background: #EAE2D1; border: 1px solid #CFC5B2; border-radius: 3px;
-    padding: 4px 10px; font-size: 9.1px;
+    padding: 4px 10px; font-size: 9.6px;
   }
   .utc-title {
     font-weight: 800; color: #8B1E1E; letter-spacing: 0.4px; white-space: nowrap;
@@ -435,9 +429,9 @@ const html = `<!doctype html>
   .mid-body { padding: 6px 8px 7px; display: flex; flex-direction: column; flex: 1; gap: 3px; }
   .mid-hed {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 13.8px; font-weight: 700; line-height: 1.13; color: #111827;
+    font-size: 14px; font-weight: 700; line-height: 1.13; color: #111827;
   }
-  .mid-desc { font-size: 9.7px; line-height: 1.25; color: #374151; }
+  .mid-desc { font-size: 10.1px; line-height: 1.25; color: #374151; }
 
   .bottom-split { display: grid; grid-template-columns: 332px 1fr; gap: 10px; flex: 1; min-height: 0; }
   .map-panel {
@@ -458,27 +452,27 @@ const html = `<!doctype html>
   .briefs-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 14px; flex: 1; }
   .brief-col { display: flex; flex-direction: column; justify-content: space-between; }
   .brief-row {
-    font-size: 10.1px; line-height: 1.28; color: #1F2937;
+    font-size: 10.6px; line-height: 1.32; color: #1F2937;
     display: flex; align-items: baseline; gap: 4px;
   }
   .b-num {
-    font-weight: 800; color: #991B1B; font-family: "Segoe UI", Arial, sans-serif; min-width: 16px; font-size: 9.6px;
+    font-weight: 800; color: #991B1B; font-family: "Segoe UI", Arial, sans-serif; min-width: 17px; font-size: 10.1px;
   }
   .b-city { font-weight: 800; color: #111827; }
 
   .map-legend {
     display: flex; justify-content: space-between; align-items: center;
-    font-size: 7.9px; color: #44403C; padding-top: 3px; border-top: 1px solid #E5DFD2;
+    font-size: 8.2px; color: #44403C; padding-top: 3px; border-top: 1px solid #E5DFD2;
   }
   .date-check {
     background: #FFFDF9; border: 1.3px solid #991B1B; border-radius: 3px;
-    padding: 4px 9px; font-size: 8.6px; color: #1F2937;
+    padding: 4px 9px; font-size: 9px; color: #1F2937;
     display: flex; align-items: center; justify-content: space-between; gap: 8px;
   }
-  .dc-tag { font-weight: 800; color: #991B1B; white-space: nowrap; font-size: 8.6px; }
+  .dc-tag { font-weight: 800; color: #991B1B; white-space: nowrap; font-size: 9px; }
   .footer {
     display: flex; justify-content: space-between; align-items: center;
-    font-size: 8.3px; color: #44403C; font-weight: 600;
+    font-size: 8.5px; color: #44403C; font-weight: 600;
     border-top: 1.5px solid #1C1917; padding-top: 3px;
   }
 </style>
@@ -487,7 +481,7 @@ const html = `<!doctype html>
 <div class="page">
   <div class="top-micro">
     <span>THE WORLD IN ONE DAY · 00:00–23:59 UTC</span>
-    <span>31 VERIFIED STORIES · 9 REGIONS · ALL FROM 26 NOVEMBER 2026</span>
+    <span>29 VERIFIED STORIES · 9 REGIONS · ALL FROM 26 NOVEMBER 2026</span>
   </div>
 
   <div class="masthead">
@@ -571,7 +565,7 @@ const html = `<!doctype html>
 
     <div class="briefs-panel">
       <div class="panel-hdr">
-        <span>ALSO ON 26 NOVEMBER 2026 — BRIEFS 12–31</span>
+        <span>ALSO ON 26 NOVEMBER 2026 — BRIEFS 12–29</span>
         <span class="sub">All datelines verified</span>
       </div>
       <div class="briefs-cols">
